@@ -102,9 +102,9 @@ Steps:
 - You might need this file or other variants (depending on your fingerprint sensor type, like green, white, or ultrasonic).
 
 
-**Step 9: to Re-Build the BiometricSetting APK**
+**Step 9: to Re-Build the BiometricSetting APK**🔨
 Hi there! Here’s a complete guide on how to rebuild the BiometricSetting APK after replacing the fingerprint animation files. Please follow the steps below carefully to avoid any issues during the process.
-- **Folder Structure Overview**
+- **Folder Structure Overview**🔩
 - After replacing the fingerprint animation files (indisplay_fingerprint_touch_effect_green_circle.json), you should have the following folder structure for your BiometricSetting APK:
 
 - ```/assets:``` Contains assets like fingerprint animation files.
@@ -155,5 +155,11 @@ Hi there! Here’s a complete guide on how to rebuild the BiometricSetting APK a
 - Backup: Before making any changes, always back up your original files to prevent data loss.
 - Root Access: This process requires root access to modify system files.
 - Permissions: Ensure that all file permissions are set properly to avoid installation issues.
+
+**Thank you for visiting my GitHub page!** :heart:
+- I hope you found this process easy to follow and that it helped you understand how to implement the changes. If you liked this project, please feel free to show your support, and I will continue 
+ to improve and share more content.
+
+Thank you once again, and your support means a lot to me! You can also connect with me on @Bomb_read.
 
 
