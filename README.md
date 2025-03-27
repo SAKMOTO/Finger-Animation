@@ -76,3 +76,5 @@ If your fingerprint sensor is disabled or not recognized by the system, and the 
 - Open the BiometricSetting folder, navigate to the /assets folder.
 - In the assets folder, you will find different files, but the key animation files are:
 - bash ```indisplay_fingerprint_touch_effect_green_circle.json```
+- ```indisplay_fingerprint_touch_effect_white_circle.json```
+- ```indisplay_fingerprint_touch_effect_ripple_circle.json```
