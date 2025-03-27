@@ -32,8 +32,9 @@ Copy the folder and paste it wherever you want as a backup.
 
 If the fingerprint animation doesn't work or if you encounter any issues, you can always replace the modified file with the original one from the backup.
 
-** Recognize Your Fingerprint Sensor Type** 
-- **2 In Samsung devices, there are typically three types of fingerprint sensors:**
+** Recognize Your Fingerprint Sensor Type**
+
+**2 In Samsung devices, there are typically three types of fingerprint sensors:**
 
 - ##**Green**(Optical Sensor)
 
