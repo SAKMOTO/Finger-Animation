@@ -1,8 +1,11 @@
-Guide to Implementing Fingerprint (FP) Animation on One UI Devices
+#**Guide to Implementing Fingerprint (FP) Animation on One UI Devices**:smile:
+
 Hi there! It's great that you're interested in developing One UI features, particularly fingerprint (FP) animations. This kind of animation is especially useful for apps that implement biometric authentication systems (like fingerprint unlocking). In this guide, I'll walk you through the basic steps to implement fingerprint animation on One UI.
 
-Basic Requirements for Fingerprint Animation (FP Animation)
-Knowledge Required
+#**Basic Requirements for Fingerprint Animation (FP Animation)** 👾
+
+#**Knowledge Required** 🧠
+
 Lottie JSON Files: You should have some understanding of Lottie JSON files and how they work. These files are used to store vector animations which are lightweight and scalable. You can use them to implement fingerprint animations.
 
 Root Access: This process requires root access to your device.
@@ -12,29 +15,31 @@ System Format: The system partition must be in EXT4 format. If your system parti
 Important Note:
 Backup Everything: Before proceeding, back up all your files and photos. This process involves working with system files, and there's always a risk of issues arising. I'm not responsible for any damage to your device.
 
-Steps to Implement Fingerprint Animation
-1. Backup Biometric Settings
+#**GUIDE** 😉
+
+1 Steps to Implement Fingerprint Animation
+** Backup Biometric Settings**
 Before making any changes, you need to back up the BiometricSetting.apk. Follow these steps:
 
 Navigate to the following directory:
 
 bash
 Copy code
-/system/priv-app
+```/system/priv-app```
 Inside the priv-app folder, you will find the BiometricSetting folder.
 
 Copy the folder and paste it wherever you want as a backup.
 
 If the fingerprint animation doesn't work or if you encounter any issues, you can always replace the modified file with the original one from the backup.
 
-2. Recognize Your Fingerprint Sensor Type
-In Samsung devices, there are typically three types of fingerprint sensors:
+** Recognize Your Fingerprint Sensor Type** 
+2 In Samsung devices, there are typically three types of fingerprint sensors:
 
-Green (Optical Sensor)
+- ##**Green**(Optical Sensor)
 
-White (Optical Sensor)
+- ##**White** (Optical Sensor)
 
-Ultra Sonic Sensor
+- ##**Ultra Sonic Sensor**
 
 Make sure you identify the correct sensor type for your device. This will help in selecting the appropriate animation and configuration.
 
