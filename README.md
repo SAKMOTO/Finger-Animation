@@ -69,12 +69,91 @@ If your fingerprint sensor is disabled or not recognized by the system, and the 
 - Go to /system/priv-app and restore the original BiometricSetting.apk file from your backup.
 - Reboot the device and check if the fingerprint sensor works again.
 
-**7. Manually Changing the Files**
+**7. Manually Changing the Files**🔍
 - If the animation is still not working, follow these steps to change the files manually:
 - Go to ```/system/priv-app``` and extract the BiometricSetting APK.
 - Ensure the extracted files are placed in internal storage for clarity.
 - Open the BiometricSetting folder, navigate to the /assets folder.
 - In the assets folder, you will find different files, but the key animation files are:
-- bash ```indisplay_fingerprint_touch_effect_green_circle.json```
+- ```indisplay_fingerprint_touch_effect_green_circle.json```
 - ```indisplay_fingerprint_touch_effect_white_circle.json```
 - ```indisplay_fingerprint_touch_effect_ripple_circle.json```
+- You might need this file or other variants (depending on your fingerprint sensor type, like green, white, or ultrasonic).
+
+
+**Step 8: Replace Fingerprint Animation Files** 📲
+In this step, you'll need to extract the fingerprint animation ZIP you downloaded earlier and replace the required animation files in the correct folder. Here's how to do it:
+Steps:
+- Go to the Fingerprint Animation Folder:
+- Open the ZIP file containing the fingerprint animation files you downloaded.
+- Extract the contents to a folder on your computer or internal storage.
+- Navigate to the Assets Folder:
+- Inside the extracted folder, look for the assets folder. This is where the fingerprint animation files are located.
+- Locate the Animation File:
+- In the assets folder, look for the following animation file:
+- ```indisplay_fingerprint_touch_effect_green_circle.json```
+- ```indisplay_fingerprint_touch_effect_white_circle.json```
+- ```indisplay_fingerprint_touch_effect_ripple_circle.json```
+- Copy the Animation File:
+- example purpose Copy the indisplay_fingerprint_touch_effect_green_circle.json file from the animation folder.
+- and navigate to ```root/system/priv-app``` and open BiometricSetting.apl and explore or extract it
+- navigate to ```/assets``` and replace it that you copy that one
+- and replace it 
+- You might need this file or other variants (depending on your fingerprint sensor type, like green, white, or ultrasonic).
+
+
+**Step 9: to Re-Build the BiometricSetting APK**
+Hi there! Here’s a complete guide on how to rebuild the BiometricSetting APK after replacing the fingerprint animation files. Please follow the steps below carefully to avoid any issues during the process.
+- **Folder Structure Overview**
+- After replacing the fingerprint animation files (indisplay_fingerprint_touch_effect_green_circle.json), you should have the following folder structure for your BiometricSetting APK:
+
+- ```/assets:``` Contains assets like fingerprint animation files.
+
+- ```/kotlin:``` Contains Kotlin code files (for app logic).
+
+- ```/META-INF:``` Contains the app’s metadata and signature information.
+
+- ```/res:``` Contains the resources like layout files, images, and UI components.
+
+- ```/SEC-INF:``` Contains security-related files, including signatures.
+
+- ```/AndroidManifest.xml:``` The manifest file defining app permissions and configurations.
+
+- ```/BiometricSetting.apk:``` The main APK file.
+
+- ```/classes.dex:``` The compiled classes in DEX format.
+
+- ```/DebugProbesKt.bin:``` Debugging information (may not be needed for production).
+
+- ```/resource.arsc:``` Contains compiled resources for the app.
+
+- **Steps to Re-Build the APK:**
+- Navigate to the Folder Structure
+- After modifying the fingerprint animation files, you should have the full folder structure as mentioned above. Ensure you have all the files in their correct locations.
+- Compress and Rename the Files
+- Select all the files and folders mentioned (i.e., /assets, /kotlin, /META-INF, /res, /SEC-INF, AndroidManifest.xml, BiometricSetting.apk, classes.dex, DebugProbesKt.bin, and resource.arsc).
+- Once selected, compress them into a ZIP file.
+- After compressing the files, rename the ZIP file to BiometricSetting.apk. This is crucial because the file must have the .apk extension for it to be recognized as an Android APK file.
+- **Set the Correct Permissions**
+- Ensure that the compressed file has the read/write permissions set correctly.
+- Use the following command to set the permissions (if you are using a terminal or command line):
+- bash
+- Copy code
+- ```chmod 755 BiometricSetting.apk```
+- This command ensures the file has read/write permissions for the owner and read-only permissions for others
+- ```(i.e., rw-r--r--).```
+- Store the Compressed APK in Internal Storage
+- Make sure to complete all the processes in your internal storage, not in the root directory. This will help avoid potential issues or damage to system files.
+- **Rebuild the APK**
+- Once you've compressed and set the permissions on the file, your BiometricSetting.apk is ready to be rebuilt.
+- Ensure the file is in internal storage before proceeding to the next step.
+- Replace the APK in the Root Folder
+- - After successfully rebuilding the BiometricSetting APK, you can replace the old BiometricSetting.apk in the /system/priv-app folder with the newly built one.
+- Make sure your device is rooted and you have root access before replacing the file.
+
+- **Important Notes:**
+- Backup: Before making any changes, always back up your original files to prevent data loss.
+- Root Access: This process requires root access to modify system files.
+- Permissions: Ensure that all file permissions are set properly to avoid installation issues.
+
+
