@@ -44,8 +44,8 @@ If the fingerprint animation doesn't work or if you encounter any issues, you ca
 Make sure you identify the correct sensor type for your device. This will help in selecting the appropriate animation and configuration.
 
 3. Extract Fingerprint Animation Files  
-https://t.me/c/2342857187/99/602
-**link to download here** 👆
+https://t.me/c/2342857187/99/602 👈🏻
+**link to download here** 
 ##**Credits**
 This method was developed with the help of contributions from @MrDexx.
    
