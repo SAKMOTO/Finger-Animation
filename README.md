@@ -43,10 +43,15 @@ If the fingerprint animation doesn't work or if you encounter any issues, you ca
 
 Make sure you identify the correct sensor type for your device. This will help in selecting the appropriate animation and configuration.
 
-3. Extract Fingerprint Animation Files
+3. Extract Fingerprint Animation Files  
+https://t.me/c/2342857187/99/602
+**link to download here** 👆
+##**Credits**
+This method was developed with the help of contributions from @MrDexx.
+   
 You can use the FP Animation ZIP file. After extracting it, you will have the required Lottie JSON files for the fingerprint animation.
 
-4. Install Lottie Files APK
+5. Install Lottie Files APK
 To view and test the animations, you'll need to install the Lottie Files APK. You can get it either from the Google Play Store or by downloading it directly from a browser (such as Chrome). Once installed, open the Lottie Files app, where you'll be able to see the types of animations available.
 
 You can open the extracted Lottie JSON files in the Lottie Files app to view the available animation types.
