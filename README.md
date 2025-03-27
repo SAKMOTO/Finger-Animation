@@ -17,7 +17,7 @@ Backup Everything: Before proceeding, back up all your files and photos. This pr
 
 #**GUIDE** 😉
 
-1 Steps to Implement Fingerprint Animation
+**1 Steps to Implement Fingerprint Animation**
 ** Backup Biometric Settings**
 Before making any changes, you need to back up the BiometricSetting.apk. Follow these steps:
 
@@ -33,7 +33,7 @@ Copy the folder and paste it wherever you want as a backup.
 If the fingerprint animation doesn't work or if you encounter any issues, you can always replace the modified file with the original one from the backup.
 
 ** Recognize Your Fingerprint Sensor Type** 
-2 In Samsung devices, there are typically three types of fingerprint sensors:
+**2 In Samsung devices, there are typically three types of fingerprint sensors:**
 
 - ##**Green**(Optical Sensor)
 
@@ -43,22 +43,35 @@ If the fingerprint animation doesn't work or if you encounter any issues, you ca
 
 Make sure you identify the correct sensor type for your device. This will help in selecting the appropriate animation and configuration.
 
-3. Extract Fingerprint Animation Files  
+**3. Extract Fingerprint Animation Files**  🔑 
 https://t.me/c/2342857187/99/602 👈🏻
 **link to download here** 
 ##**Credits**
-This method was developed with the help of contributions from @MrDexx.
+This method was developed with the help of contributions from **@MrDexx.**
    
 You can use the FP Animation ZIP file. After extracting it, you will have the required Lottie JSON files for the fingerprint animation.
 
-5. Install Lottie Files APK
+**4. Install Lottie Files APK** 🧬
 To view and test the animations, you'll need to install the Lottie Files APK. You can get it either from the Google Play Store or by downloading it directly from a browser (such as Chrome). Once installed, open the Lottie Files app, where you'll be able to see the types of animations available.
 
 You can open the extracted Lottie JSON files in the Lottie Files app to view the available animation types.
 
-5. Applying the Fingerprint Animation
-Once you have everything set up, proceed to apply the fingerprint animation on your device. The process might require replacing system files, so ensure you have backups and root access to proceed safely.
+**5. Applying the Fingerprint Animation** 🎊
+Once you've set up everything, proceed to apply the fingerprint animation on your device. This step may require replacing system files, so ensure you have root access and backups.
+- Replace the required animation file in the appropriate system folder.
+- Reboot your device.
+If the fingerprint animation appears, you have successfully implemented the animation!
 
-Credits
-This method was developed with the help of contributions from @MrDexx.
+**6. Troubleshooting** 🛠
+If your fingerprint sensor is disabled or not recognized by the system, and the animation is not working, you may need to replace the modified files with the backup BiometricSetting.apk.
+- Steps:
+- Go to /system/priv-app and restore the original BiometricSetting.apk file from your backup.
+- Reboot the device and check if the fingerprint sensor works again.
 
+**7. Manually Changing the Files**
+- If the animation is still not working, follow these steps to change the files manually:
+- Go to ```/system/priv-app``` and extract the BiometricSetting APK.
+- Ensure the extracted files are placed in internal storage for clarity.
+- Open the BiometricSetting folder, navigate to the /assets folder.
+- In the assets folder, you will find different files, but the key animation files are:
+- bash ```indisplay_fingerprint_touch_effect_green_circle.json```
